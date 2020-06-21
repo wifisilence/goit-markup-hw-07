@@ -1,0 +1,142 @@
+/*Левая часть навигации*/
+.nav-left {
+  display: flex;
+  align-items: center;
+  span {
+    color: $AccentColor;
+  }
+}
+/*Лого*/
+.logo {
+  display: flex;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $BlackColor;
+  text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+/*навигация по сайту*/
+.main-nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $BtnBordColor;
+}
+
+.site-nav {
+  display: flex;
+}
+.site-nav {
+  .item {
+    margin-right: 50px;
+  }
+  .item:first-child {
+    margin-left: 85px;
+  }
+}
+
+.site-nav {
+  .current {
+    color: $AccentColor;
+  }
+}
+
+.site-nav {
+  .link {
+    position: relative;
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+    color: $SecondaryTextColor;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $MainAnima;
+  }
+  .link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    background-color: $AccentColor;
+    border-radius: 2px;
+    height: 4px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: $MainAnima;
+  }
+}
+
+.site-nav {
+  .link:hover::after {
+    opacity: 1;
+  }
+  .link:hover,
+  .link:focus {
+    color: $AccentColor;
+  }
+}
+/*контакты в шапке*/
+.item-icon {
+  &-mail {
+    width: 16px;
+    height: 11.2px;
+    margin-right: 10px;
+  }
+  &-hone {
+    width: 10px;
+    height: 14.94px;
+    margin-right: 10px;
+  }
+}
+
+.site-contact {
+  display: flex;
+  margin-left: auto;
+  .item + .item {
+    margin-left: 30px;
+  }
+}
+
+.site-contact {
+  .link {
+    padding-bottom: 28px;
+    padding-top: 36px;
+
+    text-decoration: none;
+    color: $PrimaryTextColor;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $MainAnima;
+  }
+  .item {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $MainAnima;
+  }
+}
+
+.site-contact {
+  .link:hover,
+  .link:focus {
+    color: $AccentColor;
+  }
+  .item:hover,
+  .item:focus {
+    fill: $AccentColor;
+  }
+}

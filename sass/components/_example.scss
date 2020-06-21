@@ -1,0 +1,133 @@
+/*Фильтры*/
+.filter {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.filter .btn {
+  color: $SecondaryTextColor;
+  background: $SecondaryBcgColor;
+  font-family: inherit;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: $MainAnima;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-right: 8px;
+  align-items: center;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    color: $WhiteColor;
+    background: $AccentColor;
+  }
+}
+
+/*Примеры*/
+.example {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  .sub-title {
+    color: $SecondaryTextColor;
+    font-size: 18px;
+    line-height: 2;
+  }
+  &-link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+}
+
+.example p {
+  color: $WhiteColor;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 1.56;
+  .sub-sub-title {
+    color: $PrimaryTextColor;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+  width: 370px;
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 1;
+    transform: translateY(100%);
+    transition: transform 250ms $MainAnima;
+  }
+}
+
+.filt {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.galery-item {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.client-name {
+  padding: 20px 24px 20px 24px;
+}
+
+.over-text {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px 63px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms $MainAnima;
+}
+
+.card {
+  margin-right: 23px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  &:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 3) {
+    /*n + 3*/
+    margin-bottom: 0px;
+  }
+}
+
+.card {
+  &:hover .overlay::before {
+    transform: translateY(0);
+  }
+  &:hover .over-text {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,23 @@
+/*переменные палитра цветов*/
+$PrimaryTextColor: #757575;
+$SecondaryTextColor: #212121;
+$WhiteColor: #ffffff;
+$BlackColor: #000000;
+$AdressTextColor: rgba(255, 255, 255, 0.6);
+$PrimaryBcgColor: #ffffff;
+$SecondaryBcgColor: #f5f4fa;
+$FooterBcgColor: #2f303a;
+$HeroBcgColor: rgba(47, 48, 58, 0.8);
+$AccentColor: #2196f3;
+$BtnBordColor: #ececec;
+$MainAnima: cubic-bezier(0.4, 0, 0.2, 1);
+
+/*общий для боди*/
+.page {
+  background-color: $PrimaryBcgColor;
+  color: $PrimaryTextColor;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}

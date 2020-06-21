@@ -1,0 +1,50 @@
+/*убираем маржин у заголовков*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0px;
+}
+
+/*утилита для сброса внешних и внутренних отступов и стилей списка*/
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*утилита для скрітия заголовка*/
+.zorro {
+  display: none;
+}
+
+/*секция*/
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &-title {
+    color: $SecondaryTextColor;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+/*очистка крайней геометрии (убираем отступ)*/
+.site-nav .item:last-child {
+  margin-right: 0px;
+}
+
+/*общее контейнер*/
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

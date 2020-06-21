@@ -1,0 +1,239 @@
+/*Герой*/
+.hero {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  &-title {
+    padding-top: 200px;
+    padding-bottom: 30px;
+    color: $WhiteColor;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+.hero {
+  &-back {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/Headerimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/*Кнопка Героя*/
+.hero {
+  .btn {
+    padding: 10px 32px 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-bottom: 200px;
+    border: 1px solid $AccentColor;
+    color: $SecondaryTextColor;
+    background: $WhiteColor;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: $MainAnima;
+    &:hover,
+    &:focus {
+      color: $WhiteColor;
+      background: $AccentColor;
+    }
+  }
+}
+/*Модальное окно*/
+/*серый фон для модального окна*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 99;
+  transition: opacity 250ms $MainAnima;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: auto;
+  height: auto;
+
+  background-color: $WhiteColor;
+}
+/*Кнопка Модального Окна*/
+.modal-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  padding: 0;
+  margin: 0;
+  border: 0px solid $BlackColor;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: $WhiteColor;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/*Форма модального окна*/
+.forma {
+  width: auto;
+  height: auto;
+  margin: 40px;
+}
+
+.form-fild {
+  position: relative;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+}
+
+.form-head {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $SecondaryTextColor;
+  padding-bottom: 30px;
+}
+.item-icon-close {
+  width: 11px;
+  height: 11px;
+  align-items: center;
+  border-radius: 50%;
+}
+.modal-comm {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  width: 100%;
+  height: 120px;
+}
+.comment {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: transform 250ms $MainAnima;
+}
+
+.form-input {
+  position: relative;
+  &:focus ~ .icon-modal {
+    fill: $AccentColor;
+  }
+}
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: $AccentColor;
+  transform: translateY(-50px) translateX(-30px);
+}
+.icon-modal {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  fill: $SecondaryTextColor;
+}
+
+.chek {
+  &-modal {
+    padding-bottom: 30px;
+  }
+  &-label {
+    display: flex;
+    align-items: center;
+  }
+  &-icon {
+    margin-right: 8px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    border: 2px solid $SecondaryTextColor;
+  }
+}
+.checkbox {
+  -webkit-appearance: none;
+  position: absolute;
+  &:checked + .chek-icon {
+    border-color: $AccentColor;
+    background-color: $AccentColor;
+    background-image: url(../images/iconcheck.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+.police {
+  color: $AccentColor;
+  text-decoration-color: $AccentColor;
+}
+textarea {
+  resize: none;
+}
+.btn-submit {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px 55px 10px 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid $AccentColor;
+  color: $SecondaryTextColor;
+  background: $WhiteColor;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: $MainAnima;
+  &:hover,
+  &:focus {
+    color: $WhiteColor;
+    background: $AccentColor;
+  }
+}

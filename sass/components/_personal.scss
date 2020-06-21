@@ -1,0 +1,83 @@
+.personal {
+  background-color: $SecondaryBcgColor;
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+    color: $SecondaryTextColor;
+  }
+}
+
+.icon-insta {
+  fill: currentColor;
+  display: block;
+}
+
+.pers-foto {
+  margin-bottom: 30px;
+}
+
+.contact-person {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-bottom: 24px;
+  .pict {
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.comand .pict {
+  display: flex;
+  color: #afb1b8;
+  border-radius: 50%;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: $MainAnima;
+  &:hover,
+  &:focus {
+    background-color: $AccentColor;
+    color: $WhiteColor;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.comand {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  .item {
+    align-items: flex-end;
+    margin-right: 30px;
+    background-color: $WhiteColor;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.comand .item:last-child {
+  margin-right: 0px;
+}
+.comand {
+  .sub-title {
+    color: $SecondaryTextColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}

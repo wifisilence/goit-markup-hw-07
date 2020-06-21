@@ -1,0 +1,38 @@
+.clients .section-title {
+  margin-bottom: 50px;
+}
+
+.logo-client-block {
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $MainAnima;
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: $AccentColor;
+  }
+}
+
+.clients-logo {
+  display: flex;
+  list-style: none;
+  margin-right: 0px;
+  padding: 0px;
+  fill: currentColor;
+}
+
+.clients-logo li {
+  margin-right: 30px;
+  display: block;
+  &:last-child {
+    margin-right: 0px;
+  }
+}

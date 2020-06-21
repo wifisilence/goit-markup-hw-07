@@ -1,0 +1,195 @@
+/*футер*/
+/*Адресс фут*/
+
+footer {
+  background: var(--footer-bcg-color);
+}
+
+.adress .street {
+  color: var(--white-color);
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.contact {
+  flex: block;
+}
+
+.adress .contact {
+  color: var(--adress-text-color);
+  text-decoration: none;
+}
+
+/*Соц сети*/
+.icon-foot {
+  fill: currentColor;
+  display: block;
+}
+
+.pict-foot .pict {
+  color: var(--white-color);
+}
+
+.cosial-pict {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cosial-pict:hover,
+.cosial-pict:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.doit {
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+}
+
+.doit .sub-title {
+  display: inline-block;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 21px;
+}
+
+.cosial-pict:last-child {
+  margin-right: 0px;
+}
+
+/*Форма Подписки*/
+.subscribe {
+  display: flex;
+  padding-left: 94px;
+  width: auto;
+}
+.subscribe .sub-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.subscribe input {
+  margin-top: 20px;
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: #2f303a;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 14px;
+}
+.btn-subscribe {
+  position: absolute;
+  padding: 10px 62px 10px 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+  color: var(--secondary-text-color);
+  background: var(--white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  color: var(--white-color);
+  background: var(--accent-color);
+}
+.btn-footer {
+  align-items: flex-end;
+  width: auto;
+}
+.btn-subscribe {
+  top: 64%;
+  transform: translateY(-50%);
+}
+.btn-footer {
+  position: relative;
+  padding-left: 12px;
+}
+.btn-subscribe:hover + .futter-send {
+  background-color: crimson;
+}
+.futter-send {
+  position: absolute;
+  top: 50%;
+  left: 148px;
+  transform: translateY(-50%);
+}
+/*Создано*/
+
+.create {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 21px;
+}
+/*Работа с блоками*/
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-section {
+  display: flex;
+}
+
+.pict-foot {
+  display: flex;
+}
+
+.doit .sub-title {
+  text-align: start;
+}
+
+.footer-section .conteiner {
+  padding-top: 48px;
+}
+
+.section-footer {
+  padding-bottom: 28px;
+  padding-top: 48px;
+}
+
+.create {
+  border-top: 1px solid var(--white-color);
+}
+
+
+
+
+
+
+
+
+

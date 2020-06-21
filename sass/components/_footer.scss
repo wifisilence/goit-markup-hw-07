@@ -1,0 +1,161 @@
+/*футер*/
+
+footer {
+  background: $FooterBcgColor;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  .street {
+    color: $WhiteColor;
+    letter-spacing: 0.03em;
+  }
+  .contact {
+    color: $AdressTextColor;
+    text-decoration: none;
+    flex: block;
+  }
+}
+.icon-foot {
+  fill: currentColor;
+  display: block;
+}
+
+.pict-foot .pict {
+  color: $AdressTextColor;
+}
+
+.cosial-pict {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: $MainAnima;
+  &:hover,
+  &:focus {
+    color: $WhiteColor;
+    background-color: $AccentColor;
+  }
+}
+
+.cosial-pict:last-child {
+  margin-right: 0px;
+}
+
+.doit {
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+  .sub-title {
+    display: inline-block;
+    color: $WhiteColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 21px;
+    text-align: start;
+  }
+}
+
+/*Форма Подписки*/
+.subscribe {
+  display: flex;
+  padding-left: 94px;
+  width: auto;
+  .sub-title {
+    color: $WhiteColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.subscribe input {
+  margin-top: 20px;
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: $FooterBcgColor;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn-subscribe {
+  position: absolute;
+  padding: 10px 62px 10px 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid $AccentColor;
+  color: $SecondaryTextColor;
+  background: $WhiteColor;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: $MainAnima;
+  top: 64%;
+  transform: translateY(-50%);
+  &:hover,
+  &:focus {
+    color: $WhiteColor;
+    background: $AccentColor;
+  }
+}
+
+.btn-footer {
+  align-items: flex-end;
+  width: auto;
+  position: relative;
+  padding-left: 12px;
+}
+
+.futter-send {
+  position: absolute;
+  top: 50%;
+  left: 148px;
+  transform: translateY(-50%);
+}
+/*Создано*/
+
+.create {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 21px;
+}
+/*Работа с блоками*/
+
+.footer-section {
+  display: flex;
+}
+
+.pict-foot {
+  display: flex;
+}
+
+.footer-section .conteiner {
+  padding-top: 48px;
+}
+
+.section-footer {
+  padding-bottom: 28px;
+  padding-top: 48px;
+}
+
+.create {
+  border-top: 1px solid $WhiteColor;
+}
