@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/*переменные палитра цветов*/
-/*общий для боди*/
-.page {
-  background-color: #ffffff;
-  color: #757575;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 /*убираем маржин у заголовков*/
 h1,
 h2,
@@ -59,6 +48,17 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*переменные палитра цветов*/
+/*общий для боди*/
+.page {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /*Левая часть навигации*/
